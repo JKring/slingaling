@@ -2,7 +2,10 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: 'Slingaling Dingaling',
+    title: 'Slingaling Dingaling | A tabletop, slingshot billiard game for everyone!',
+    description: "Catapult your puck across the board, ricocheting off the walls to ring your opponent's bell!",
+    author: '@jakekring',
+    siteUrl: 'slingaling.com'
   },
   plugins: [
     {
