@@ -68,7 +68,7 @@ const IndexPage = () => {
         <Subheader>in early 2021.</Subheader>
         <FormContainer>
           <Text>Join the waiting list (and we'll sling a puck your way).</Text>
-          <Form name='contact' method='POST' data-netlify='true' action='/success'>
+          <Form name='contact' method='POST' data-netlify='true' action='/success/'>
             <input type='hidden' name='form-name' value='waiting-list' />
             <BigInput type='email' name='email' placeholder='eagerbeaver@gmail.com' />
             <BigButton type='submit'>Join the List</BigButton>
