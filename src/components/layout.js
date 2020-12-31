@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import './layout.css'
+import SeoStuff from './seoStuff'
 
 const Container = styled.main`
   margin: 0;
@@ -9,8 +10,15 @@ const Container = styled.main`
   background-color: #FFEEDB;
 `
 
-const Layout = ({ children }) => {
-  return <Container>{children}</Container>
+const Layout = ({ title, description, path, children }) => {
+  return <Container>
+    { !!title && <SeoStuff
+      title={title}
+      description={description}
+      path={path}
+    />}
+    {children}
+  </Container>
 }
 
 export default Layout

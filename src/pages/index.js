@@ -62,7 +62,10 @@ const BigButton = styled.button`
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout
+      title={'A tabletop, slingshot billiard game for everyone!'}
+      path={'/'}
+    >
       <Content>
         <Header>Dingalings will be Slingalinging...</Header>
         <Subheader>in early 2021.</Subheader>
