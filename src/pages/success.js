@@ -21,7 +21,7 @@ const Subheader = styled.h3`
 
 const SuccessPage = () => {
   return (
-    <Layout>
+    <Layout title={'Thanks for joining!'}>
       <Content>
         <Header>Thanks!</Header>
         <Subheader>We'll be in touch soon.</Subheader>
