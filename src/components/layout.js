@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import './layout.css'
-import SeoStuff from './seoStuff'
+import MarketingStuff from './marketingStuff'
 
 const Container = styled.main`
   margin: 0;
@@ -12,11 +12,11 @@ const Container = styled.main`
 
 const Layout = ({ title, description, path, children }) => {
   return <Container>
-    { !!title && <SeoStuff
+    <MarketingStuff
       title={title}
       description={description}
       path={path}
-    />}
+    />
     {children}
   </Container>
 }
