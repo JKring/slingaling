@@ -3,6 +3,17 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 
+import travisFullFrontal from '../images/hero-background.jpg'
+import maxsTiniestDingaling from '../images/maxs-tiniest-dingaling.gif'
+import easyToLearn from '../images/easy-to-learn.jpg'
+import betterByTheBeach from '../images/better-by-the-beach.jpg'
+import backyard from '../images/backyard.jpg'
+import endzones from '../images/endzones.png'
+import fingerOnPuckHole from '../images/finger-on-puck-hole.png'
+import slingAngle from '../images/sling-angle.png'
+import colorThroughThePuckHole from '../images/color-through-the-puck-hole.png'
+import dingalingDot from '../images/dingaling-dot.png'
+
 const Hero = styled.section`
   height: 800px;
   @media only screen and (max-width: 600px) {
@@ -63,7 +74,7 @@ const BigButton = styled.button`
 
 const VALUE_PROPS = [
   {
-    img: '/static/images/easy-to-learn.jpg',
+    img: easyToLearn,
     headline: 'Easy to Learn',
     explainers: [
       'Your kids will get it in 2 minutes.',
@@ -71,7 +82,7 @@ const VALUE_PROPS = [
     ]
   },
   {
-    img: '/static/images/maxs-tiniest-dingaling.gif',
+    img: maxsTiniestDingaling,
     headline: 'Delightfully Tactile',
     explainers: [
       'Bells will be ringing.',
@@ -79,7 +90,7 @@ const VALUE_PROPS = [
     ]
   },
   {
-    img: "/static/images/lifes-a-beach.jpg",
+    img: betterByTheBeach,
     headline: 'Bring it Anywhere',
     explainers: [
       'The board folds',
@@ -94,7 +105,7 @@ const IndexPage = () => {
       title={'A tabletop, slingshot billiard game for everyone!'}
       path={'/'}
     >
-      <Hero className="bg-hero-image bg-no-repeat bg-contain md:bg-cover p-5 bg-purple">
+      <Hero css={{ backgroundImage: `url(${travisFullFrontal})` }} className="bg-no-repeat bg-contain md:bg-cover p-5 bg-purple">
         <Logo className="text-3xl md:text-6xl">Slingaling</Logo>
         <h3 style={{color: 'white', maxWidth: 600 }} className="my-64 py-4 mb-10 md:my-20 text-2xl text-center md:text-left md:text-4xl lg:text-5xl">What if <b>shuffleboard</b> and <b>pinball</b> had a baby… who loved <b>slingshots</b>?</h3>
       </Hero>
@@ -117,7 +128,7 @@ const IndexPage = () => {
       </div>
       <div className="grid gap-8 grid-cols-1 bg-yellow">
         <div className="mt-12">
-          <img className="rounded-full w-80 h-80 m-auto" src="/static/images/backyard.jpg" alt="Made in Oakland" />
+          <img className="rounded-full w-80 h-80 m-auto" src={backyard} alt="Made in Oakland" />
           <h3 className="text-center text-xl my-10">
             Handmade in a <b>backyard</b> in <b>Oakland</b>,<br />
             backed by a <b>Lifetime Guarantee</b>.
@@ -134,7 +145,7 @@ const IndexPage = () => {
           <h3 className="text-4xl lg:text-6xl text-yellow mt-10">You win when <b>all 4</b> of your opponent’s <b>End Zones</b> have <b>no Dingaling</b>.</h3>
         </div>
         <div className="p-6">
-          <img className="m-auto" src="/static/images/endzones.png" alt="End Zones and Dingalings" />
+          <img className="m-auto" src={endzones} alt="End Zones and Dingalings" />
         </div>
       </div>
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2 bg-yellow">
@@ -143,7 +154,7 @@ const IndexPage = () => {
           <p className="text-2xl lg:text-4xl mt-10">By placing your <b>index finger</b> on the <b>Puck Hole</b> and pulling back, take turns slinging the Puck at each other’s <b>End Zones</b>.</p>
         </div>
         <div className="p-6">
-          <img className="m-auto" src="/static/images/finger-on-puck-hole.png" alt="Index finger on Puck Hole" />
+          <img className="m-auto" src={fingerOnPuckHole} alt="Index finger on Puck Hole" />
         </div>
       </div>
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2 bg-purple">
@@ -151,7 +162,7 @@ const IndexPage = () => {
           <p className="text-yellow text-2xl lg:text-4xl mt-10">You may change the <b>Sling Angle before</b> each shot you take, but you <b>must leave</b> the Sling as it is <b>after</b> your turn.</p>
         </div>
         <div className="p-6">
-          <img className="m-auto" src="/static/images/sling-angle.png" alt="Sling Angle" />
+          <img className="m-auto" src={slingAngle} alt="Sling Angle" />
         </div>
       </div>
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2 bg-purple">
@@ -160,7 +171,7 @@ const IndexPage = () => {
           <p className="text-yellow text-2xl lg:text-4xl mt-10">When you take a Dingaling, you can <b>place it</b> on any <b>Dingaling Dot</b> or any of your <b>unprotected</b> End Zones.</p>
         </div>
         <div className="p-6">
-          <img className="m-auto" src="/static/images/color-through-the-puck-hole.png" alt="Color visible through the puck hole" />
+          <img className="m-auto" src={colorThroughThePuckHole} alt="Color visible through the puck hole" />
         </div>
       </div>
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2 bg-yellow">
@@ -169,7 +180,7 @@ const IndexPage = () => {
           <p className="text-2xl lg:text-4xl mt-10">If you knock a Dingaling down from one of the <b>Dingaling Dots</b> on the board, you can still move that Dingaling to another Dot or to any of your unprotected End Zones, but it <b>doesn’t grant you another shot</b>.</p>
         </div>
         <div className="p-6">
-          <img className="m-auto" src="/static/images/dingaling-dot.png" alt="Dingaling Dot" />
+          <img className="m-auto" src={dingalingDot} alt="Dingaling Dot" />
         </div>
       </div>
       <div className="grid gap-8 grid-cols-1 bg-yellow p-6">
