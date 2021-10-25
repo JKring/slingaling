@@ -4,10 +4,8 @@ import styled from 'styled-components'
 import './layout.css'
 import MarketingStuff from './marketingStuff'
 
-const Container = styled.main`
-  margin: 0;
-  height: 100vh;
-  background-color: #FFEEDB;
+const Container = styled.div`
+
 `
 
 const Layout = ({ title, description, path, children }) => {
