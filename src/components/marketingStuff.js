@@ -39,7 +39,7 @@ const SeoStuff = ({ title, description, path }) => {
 
 }
 
-const MarketingStuff = ({ title, description, path }) => {
+const MarketingStuff = ({ title, description, path, canonicalUrl }) => {
   return (
     <>
       { !!title && SeoStuff({ title, description, path }) }
@@ -52,6 +52,7 @@ const MarketingStuff = ({ title, description, path }) => {
 
             gtag('config', 'G-ZTSN6F2BRH');`}
         </script>
+        {!!canonicalUrl && <link rel="canonical" href={canonicalUrl} /> }
       </Helmet>
     </>
   )

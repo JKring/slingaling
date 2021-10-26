@@ -8,11 +8,12 @@ const Container = styled.div`
 
 `
 
-const Layout = ({ title, description, path, children }) => {
+const Layout = ({ title, description, path, canonicalUrl, children }) => {
   return <Container>
     <MarketingStuff
       title={title}
       description={description}
+      canonicalUrl={canonicalUrl}
       path={path}
     />
     {children}
